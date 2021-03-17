@@ -2,16 +2,16 @@ import { registerMicroApps, start } from 'qiankun';
 
 registerMicroApps([
   {
-    name: 'child1-project',
+    name: 'spa-history-project',
     entry: '//localhost:8081',
     container: '#container',
-    activeRule: '/app-child1',
+    activeRule: '/app-spa-history/',
   },
   {
-    name: 'child2-project',
+    name: 'spa-hash-project',
     entry: '//localhost:8082',
     container: '#container',
-    activeRule: '/app-child2',
+    activeRule: '/app-spa-hash/',
   },
 ]);
 // 启动 qiankun

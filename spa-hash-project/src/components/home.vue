@@ -1,6 +1,6 @@
 <template>
   <div>
-    child2 home
+    spa-hash home
   </div>
 </template>
 

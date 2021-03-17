@@ -1,6 +1,6 @@
 <template>
   <div>
-    child1 play
+    spa-hash play
   </div>
 </template>
 

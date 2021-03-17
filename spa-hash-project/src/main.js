@@ -13,8 +13,8 @@ let instance = null
 function render(props = {}) {
   const {container} = props
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? '/app-child2/' : '/',
-    mode: 'history',
+    // base: window.__POWERED_BY_QIANKUN__ ? '/app-child2/' : '/', // hash模式不配置base
+    mode: 'hash',
     routes
   })
 

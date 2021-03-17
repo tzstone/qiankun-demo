@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <p>
-      <router-link to="/home">Go to home</router-link> 
-      <router-link to="/play">Go to play</router-link>
-      <router-link to="/app-child1">Go to child1</router-link>
-      <router-link to="/app-child2">Go to child2</router-link>
-    </p>
+    <ul>
+      <li><router-link to="/home">Go to home</router-link> </li>
+      <li><router-link to="/play">Go to play</router-link></li>
+      <li><router-link to="/app-spa-history/">Go to spa-history</router-link></li>
+      <li><router-link to="/app-spa-hash/">Go to spa-hash</router-link></li>
+    </ul>
     <router-view></router-view>
 
     <div>

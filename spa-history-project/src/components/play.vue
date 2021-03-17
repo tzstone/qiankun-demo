@@ -1,6 +1,6 @@
 <template>
   <div>
-    child1 home
+    spa-history play
   </div>
 </template>
 
