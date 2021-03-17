@@ -3,8 +3,9 @@
     <ul>
       <li><router-link to="/home">Go to home</router-link> </li>
       <li><router-link to="/play">Go to play</router-link></li>
-      <li><router-link to="/app-spa-history/">Go to spa-history</router-link></li>
-      <li><router-link to="/app-spa-hash/">Go to spa-hash</router-link></li>
+      <li><router-link to="/app-spa-history">Go to spa-history</router-link></li>
+      <li><router-link to="/app-spa-hash">Go to spa-hash</router-link></li>
+      <li><router-link to="/app-jquery">Go to jquery</router-link></li>
     </ul>
     <router-view></router-view>
 
