@@ -11,8 +11,7 @@
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/why520crazy/angular1.x-webpack-seed.git"
+    "type": "git"
   },
   "keywords": [
     "webpack",
@@ -23,10 +22,7 @@
   ],
   "author": "why520crazy",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/why520crazy/angular1.x-webpack-seed/issues"
-  },
-  "homepage": "https://github.com/why520crazy/angular1.x-webpack-seed#readme",
+  "bugs": {},
   "dependencies": {
     "angular": "^1.5.7",
     "angular-route": "^1.5.7",

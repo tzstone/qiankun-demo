@@ -19,7 +19,6 @@ module.exports = function () {
         entry  : {
             'vendor'   : ['angular', 'angular-route'],
             'app'      : './app.js',
-            'app.other': './app.other.js'
         },
         output : {
             path         : helpers.root('./www'),

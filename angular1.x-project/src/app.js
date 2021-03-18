@@ -10,13 +10,11 @@ let appComponent = {
     template    : require('./app.html'),
     controller  : function () {
         this.class = style;
-        this.url = 'https://github.com/why520crazy/angular1.x-webpack-seed';
     },
     controllerAs: 'app'
 };
 
-export default angular.module('xxxApp', [ngRoute, components,'hello'])
+export default angular.module('xxxApp', [ngRoute, components])
     .config(appRouter)
     .component('app', appComponent)
     .name;
-angular.module('hello',[]);
