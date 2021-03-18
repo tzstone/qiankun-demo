@@ -6,6 +6,7 @@
       <li><router-link to="/app-spa-history">Go to spa-history</router-link></li>
       <li><router-link to="/app-spa-hash">Go to spa-hash</router-link></li>
       <li><router-link to="/app-jquery">Go to jquery</router-link></li>
+      <li><router-link to="/app-angular1">Go to angular1</router-link></li>
     </ul>
     <router-view></router-view>
 

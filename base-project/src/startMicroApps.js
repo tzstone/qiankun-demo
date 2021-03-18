@@ -19,6 +19,12 @@ registerMicroApps([
     container: '#container',
     activeRule: '/app-jquery',
   },
+  {
+    name: 'angular1-project',
+    entry: '//localhost:8084',
+    container: '#container',
+    activeRule: '/app-angular1',
+  },
 ]);
 // 启动 qiankun
 start();
