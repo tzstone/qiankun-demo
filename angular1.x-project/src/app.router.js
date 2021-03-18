@@ -3,11 +3,11 @@ routing.$inject = ['$routeProvider', '$locationProvider'];
 export default function routing($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider
-        .when('/', {
+        .when('/app-angular1/', {
             template: '<home></home>'
         })
-        .when('/about', {
+        .when('/app-angular1/about', {
             template: '<about></about>'
         })
-        .otherwise('/');
+        .otherwise('/app-angular1/');
 }
