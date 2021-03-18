@@ -1,5 +1,5 @@
 'use strict';
-
+const { name } = require('./package');  // 与子应用注册时的name对应
 // Modules
 const webpack = require('webpack');
 const helpers = require('./webpack/helpers');
@@ -23,7 +23,9 @@ module.exports = function () {
         output : {
             path         : helpers.root('./www'),
             publicPath   : '/',
-            //library      : '[name]_[hash:8]',
+            library: `${name}-[name]`,
+            libraryTarget: 'umd',// 把微应用打包成 umd 库格式
+            jsonpFunction: `webpackJsonp_${name}`,
             filename     : isProd ? '[name].[hash:8].js' : '[name].bundle.js',
             chunkFilename: isProd ? '[name].[hash:8].js' : '[name].bundle.js'
             // publish to cdn

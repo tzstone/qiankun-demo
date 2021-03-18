@@ -1,5 +1,5 @@
 {
-  "name": "angular1.x-project",
+  "name": "angular1",
   "version": "1.0.0",
   "description": "ES6 + Webpack seed for Angular 1.x",
   "main": "src/app.js",

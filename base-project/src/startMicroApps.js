@@ -20,7 +20,7 @@ registerMicroApps([
     activeRule: '/app-jquery',
   },
   {
-    name: 'angular1-project',
+    name: 'angular1',
     entry: '//localhost:8084',
     container: '#container',
     activeRule: '/app-angular1',

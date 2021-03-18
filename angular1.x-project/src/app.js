@@ -24,11 +24,11 @@ export default angular.module('xxxApp', [ngRoute, components])
 const ngLifecycles = singleSpaAngularJS({
     angular: angular,
     mainAngularModule: 'xxxApp',
-    uiRouter: true,
     preserveGlobal: false,
     template: require('./app.html'),
 });
 
 export const bootstrap = ngLifecycles.bootstrap;
 export const mount = ngLifecycles.mount;
+// Unknown provider: $uiRouterProvider <- $uiRouter, 需修改源码 https://github.com/single-spa/single-spa-angularjs/issues/59
 export const unmount = ngLifecycles.unmount;
