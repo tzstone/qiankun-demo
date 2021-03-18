@@ -1,3 +1,5 @@
+import './public-path'
+import singleSpaAngularJS from 'single-spa-angularjs';
 import angular from 'angular';
 import ngRoute from 'angular-route';
 import components from './components';
@@ -18,3 +20,15 @@ export default angular.module('xxxApp', [ngRoute, components])
     .config(appRouter)
     .component('app', appComponent)
     .name;
+
+const ngLifecycles = singleSpaAngularJS({
+    angular: angular,
+    mainAngularModule: 'xxxApp',
+    uiRouter: true,
+    preserveGlobal: false,
+    template: require('./app.html'),
+});
+
+export const bootstrap = ngLifecycles.bootstrap;
+export const mount = ngLifecycles.mount;
+export const unmount = ngLifecycles.unmount;

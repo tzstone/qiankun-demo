@@ -193,7 +193,10 @@ module.exports = function () {
             // Minimize output infomation
             //stats      : 'minimal',
             // Server port
-            port       : 8084
+            port       : 8084,
+            headers: {
+                'Access-Control-Allow-Origin': '*', // 开发环境运行跨域
+            },
         }
     };
 

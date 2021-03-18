@@ -28,7 +28,8 @@
     "angular-route": "^1.5.7",
     "bootstrap": "^3.3.6",
     "jquery": "^3.1.0",
-    "md5": "^2.1.0"
+    "md5": "^2.1.0",
+    "single-spa-angularjs": "^4.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
