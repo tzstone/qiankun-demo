@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="spa-history">
     <ul>
       <li><router-link to="/home">home</router-link> </li>
       <li><router-link to="/play">play</router-link></li>

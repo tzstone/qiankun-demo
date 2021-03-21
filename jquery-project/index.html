@@ -15,6 +15,12 @@
     <div id="purehtml-container">
     </div>
     <!-- built files will be auto injected -->
+    <!-- 使用entry标记为入口文件 -->
     <script src="./entry.js" entry></script>
+    <script>
+      window.onload = function() {
+        console.error('window onloaded')
+      }
+    </script>
   </body>
 </html>

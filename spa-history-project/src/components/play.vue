@@ -11,6 +11,9 @@ export default {
     return {
     }
   },
+  mounted() {
+    console.error('spa-history play')
+  },
   methods: {}
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="spa-history ">
     spa-history home
   </div>
 </template>
@@ -15,6 +15,8 @@ export default {
 }
 </script>
 
-<style lang='less' scoped>
-
+<style scoped>
+.spa-history {
+  color: yellow;
+}
 </style>

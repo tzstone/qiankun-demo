@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="spa-hash">
     spa-hash home
   </div>
 </template>
@@ -11,10 +11,15 @@ export default {
     return {
     }
   },
+  mounted() {
+    console.error('spa-hash')
+  },
   methods: {}
 }
 </script>
 
-<style lang='less' scoped>
-
+<style scoped>
+.spa-hash {
+  color: green;
+}
 </style>
