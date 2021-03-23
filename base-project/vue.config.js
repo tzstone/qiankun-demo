@@ -11,5 +11,11 @@ module.exports = {
         }
       },
     }
-  }
+  },
+  configureWebpack: {
+    externals: {
+      'vue': 'Vue2',
+      'vue-router': 'VueRouter'
+    }
+  },
 }

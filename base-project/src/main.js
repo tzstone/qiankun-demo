@@ -33,7 +33,22 @@ registerMicroApps([
     container: '#container',
     activeRule: '/app-angular1',
   },
-]);
+], {
+  beforeLoad(app) {
+    // spa-history-project 复用父项依赖
+    if (['spa-history-project'].includes(app.name)) {
+      if (window.Vue2) {
+        window.Vue = window.Vue2
+        window.Vue2 = undefined
+      }
+    } else {
+      if (window.Vue) {
+        window.Vue2 = window.Vue
+        window.Vue = undefined
+      }
+    }
+  }
+});
 
 // 定义全局状态
 const { onGlobalStateChange, setGlobalState } = initGlobalState({

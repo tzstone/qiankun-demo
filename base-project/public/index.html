@@ -12,6 +12,13 @@
       <strong>We're sorry but base-project doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3.5.1"></script>
+    <script>
+      // fix 子项目复用父项目依赖bug https://github.com/umijs/qiankun/issues/718
+      window.Vue2 = window.Vue
+      window.Vue = undefined
+    </script>
     <!-- built files will be auto injected -->
   </body>
 </html>
