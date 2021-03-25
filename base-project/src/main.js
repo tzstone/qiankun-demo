@@ -67,7 +67,7 @@ setGlobalState({
 });
 
 // 启动 qiankun
-start();
+start({prefetch: false});
 
 Vue.config.productionTip = false
 
