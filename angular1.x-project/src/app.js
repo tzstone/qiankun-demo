@@ -1,4 +1,4 @@
-import './public-path'
+import './public-path';
 import singleSpaAngularJS from 'single-spa-angularjs';
 import angular from 'angular';
 import ngRoute from 'angular-route';

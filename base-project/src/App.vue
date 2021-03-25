@@ -8,11 +8,11 @@
       <li><router-link to="/app-jquery">Go to jquery</router-link></li>
       <li><router-link to="/app-angular1">Go to angular1</router-link></li>
     </ul>
-    <router-view></router-view>
+    <router-view />
 
     <div>
       子应用:
-      <div id='container'></div>
+      <div id="container" />
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@
 <script>
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
   }
 }

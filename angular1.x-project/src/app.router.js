@@ -8,6 +8,6 @@ export default function routing($routeProvider, $locationProvider) {
         })
         .when('/app-angular1/about', {
             template: '<about></about>'
-        })
+        });
         // .otherwise('/'); // 不能有otherwise, 否则切换微应用有异常
 }

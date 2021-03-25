@@ -15,7 +15,7 @@ const isProd = ENV === 'build';
 
 module.exports = function () {
     const config = {
-        context: helpers.root("./src"),
+        context: helpers.root('./src'),
         entry  : {
             'vendor'   : ['angular', 'angular-route'],
             'app'      : './app.js',
@@ -94,14 +94,14 @@ module.exports = function () {
                  */
                 {
                     test   : /\.less$/,
-                    exclude: helpers.root("./src/css/main.less"),
-                    loader : ExtractTextPlugin.extract("css!postcss!less")
+                    exclude: helpers.root('./src/css/main.less'),
+                    loader : ExtractTextPlugin.extract('css!postcss!less')
                 },
                 //{test: /\.less$/, loader: extractLESS.extract(['css', 'postcss!less'])},
                 //all css required in src/app files will be merged in js files
                 {
                     test   : /\.less/,
-                    include: helpers.root("./src/css/main.less"),
+                    include: helpers.root('./src/css/main.less'),
                     loader : 'style!css!postcss!less'
                 },
 
@@ -162,7 +162,7 @@ module.exports = function () {
                 chunksSortMode: 'dependency'
             }),
             new HtmlWebpackPlugin({
-                filename      : "app.other.html",
+                filename      : 'app.other.html',
                 template      : helpers.root('./src/index.html'),
                 //inject        : 'body',
                 chunks        : ['commons.chunk.js', 'vendor', 'app.other'],

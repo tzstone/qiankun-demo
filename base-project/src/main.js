@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import { registerMicroApps, start, initGlobalState } from 'qiankun';
+import { registerMicroApps, start, initGlobalState } from 'qiankun'
 
 // 注册微应用
 registerMicroApps([
@@ -19,20 +19,20 @@ registerMicroApps([
     name: 'spa-hash-project',
     entry: '//localhost:8082',
     container: '#container',
-    activeRule: '/app-spa-hash',
+    activeRule: '/app-spa-hash'
   },
   {
     name: 'purehtml',
     entry: '//localhost:8083',
     container: '#container',
-    activeRule: '/app-jquery',
+    activeRule: '/app-jquery'
   },
   {
     name: 'angular1',
     entry: '//localhost:8084',
     container: '#container',
-    activeRule: '/app-angular1',
-  },
+    activeRule: '/app-angular1'
+  }
 ], {
   beforeLoad(app) {
     // spa-history-project 复用父项依赖
@@ -48,30 +48,30 @@ registerMicroApps([
       }
     }
   }
-});
+})
 
 // 定义全局状态
 const { onGlobalStateChange, setGlobalState } = initGlobalState({
-  user: 'qiankun', // 设置初始值
-});
+  user: 'qiankun' // 设置初始值
+})
 
 // 在当前应用监听全局状态
-onGlobalStateChange((value, prev) => console.log('[onGlobalStateChange - master]:', value, prev));
+onGlobalStateChange((value, prev) => console.log('[onGlobalStateChange - master]:', value, prev))
 
 // 按一级属性设置全局状态，微应用中只能修改已存在的一级属性
 setGlobalState({
   ignore: 'master',
   user: {
-    name: 'master',
-  },
-});
+    name: 'master'
+  }
+})
 
 // 启动 qiankun
-start({prefetch: false});
+start({ prefetch: false })
 
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
-  router,
+  router
 }).$mount('#app')
