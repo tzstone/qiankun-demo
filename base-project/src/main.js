@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import 'zone.js/dist/zone'
 import App from './App.vue'
 import router from './router'
 import { registerMicroApps, start, initGlobalState } from 'qiankun'
@@ -32,6 +33,12 @@ registerMicroApps([
     entry: '//localhost:8084',
     container: '#container',
     activeRule: '/app-angular1'
+  },
+  {
+    name: 'angular11',
+    entry: '//localhost:4200/',
+    container: '#container',
+    activeRule: '/app-angular11'
   }
 ], {
   beforeLoad(app) {
@@ -67,7 +74,8 @@ setGlobalState({
 })
 
 // 启动 qiankun
-start({ prefetch: false })
+// 不启用sandbox, fix echarts下载图片失败bug. 或者可以采用不启用沙箱的方式单独加载微应用
+start({ prefetch: false, sandbox: false })
 
 Vue.config.productionTip = false
 

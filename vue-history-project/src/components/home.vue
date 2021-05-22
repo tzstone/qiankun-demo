@@ -1,14 +1,15 @@
 <template>
   <div class="spa-history ">
-    spa-history home
+    spa-history-new {{ name }}
   </div>
 </template>
 
 <script>
 export default {
   name: '',
-  data () {
+  data() {
     return {
+      name: 'home'
     }
   },
   methods: {}

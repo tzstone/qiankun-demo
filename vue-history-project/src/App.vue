@@ -4,7 +4,7 @@
       <li><router-link to="/home">home</router-link> </li>
       <li><router-link to="/play">play</router-link></li>
     </ul>
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 

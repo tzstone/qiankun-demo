@@ -1,5 +1,6 @@
 const home = () => import('@/components/home')
 const play = () => import('@/components/play')
+const chart = () => import('@/components/chart')
 
 export default [
   {
@@ -15,5 +16,10 @@ export default [
     path: '/play',
     name: 'play',
     component: play
+  },
+  {
+    path: '/chart',
+    name: 'chart',
+    component: chart
   }
 ]

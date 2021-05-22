@@ -1,0 +1,8 @@
+<h1>Angular Router</h1>
+<button (click)="toCrisis()">crisis</button> | 
+<button (click)="toHeroes()">heroes</button>
+<nav>
+  <a routerLink="/crisis" routerLinkActive="active">Crisis</a> | 
+  <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+</nav>
+<router-outlet></router-outlet>

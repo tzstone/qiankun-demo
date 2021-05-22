@@ -1,14 +1,15 @@
 <template>
   <div>
-    spa-history play
+    spa-history-new {{ name }}
   </div>
 </template>
 
 <script>
 export default {
   name: '',
-  data () {
+  data() {
     return {
+      name: 'play'
     }
   },
   mounted() {
