@@ -10,7 +10,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { enableTracing: true } )],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false } )],
   exports: [RouterModule],
   providers: [
     { provide: APP_BASE_HREF, useValue: (window as any).__POWERED_BY_QIANKUN__ ? '/app-angular11/' : '/' }
